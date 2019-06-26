@@ -1,3 +1,0 @@
-{{ form_row(form.typeFichier) }}
-        {{ form_row(form.imageFile) }}
-        {{ form_row(form.description) }}

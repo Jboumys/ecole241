@@ -1,0 +1,45 @@
+/****** style css créé le 03/02/2019 par BOUMYS JEAN-WILSON 
+email: jboumys@gmail.com ********/
+
+/******* alignement texte, composants, contenu ********/
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+
+
+/******* les couleurs de base(texte, font) *********/
+.bg-white{
+    background-color: #fff;
+}.bg-whitesmoke{
+    background-color: #F5F5F5;
+}
+.bg-snow{
+   background-color: #FFFAFA; 
+}
+.bg-red{
+    background-color: red;
+}
+.bg-redtomate{
+    background-color: #FF6347;
+}.bg-redsalmon{
+    background-color: #FA8072;
+}
+.bg-steelblue{
+    background-color: #4682B4;
+}
+.bg-lightgray{
+    background-color: #D3D3D3;
+}
+.bg-gray{
+    background-color: #808080
+}
+
+/********** barres de navigation ***********/
+
+

@@ -1,0 +1,19 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        identify_images:
+            uri_prefix: '%app.path.identify_images%'
+            upload_destination: '%kernel.project_dir%/public%app.path.identify_images%'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+
+        document_fichiers:
+            uri_prefix: '%app.path.document_fichiers%'
+            upload_destination: '%kernel.project_dir%/public%app.path.document_fichiers%'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+
+#        document_fichier:
+#            uri_prefix: /uploads/document/requerants
+#            upload_destination: '%kernel.project_dir%/public/uploads/document/requerants'
+#            namer: Vich\UploaderBundle\Naming\UniqidNamer
+

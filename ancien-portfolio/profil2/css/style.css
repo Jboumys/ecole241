@@ -1,0 +1,92 @@
+ /*****style css********/
+
+body{
+    
+}
+header{
+    height: 370px;
+}
+footer{
+    background-color: steelblue;
+    height: 100px;
+}
+.circle-img{
+    border: 1px solid steelblue;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 180px;
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+}
+ul li a{
+   text-decoration: none; 
+   color: #fff;    
+}
+.menu-icon ul li a{
+    padding: 10px;
+}
+.menu ul li a::after{
+   content: "";    
+   border: 1px solid #fff;
+   margin: auto 10px;    
+       
+}
+.menu-foot ul li{
+    margin: 10px;
+}
+.menu-foot ul li a{
+
+}
+.menu-foot{
+    width: 500px;
+    /*border: 1px solid #fff; */
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 1px 4px 8px gray;
+    margin-top: 20px;
+    margin: 20px; 
+    padding: 15px;
+}
+#projets div a h2{
+    display: inline;
+    margin: 10px 
+}
+#projets div{
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+#projets div a img{
+    width: 300px;
+    margin: 15px;
+}
+.margin-bottom-15{
+    margin-bottom: 15px;
+}
+.hardskills{
+    width: 300px;
+    
+    
+}
+.softskills{
+    width: 300px;
+    
+}
+.temoignage{
+    clear: both;
+}
+h1{
+    text-align: center;
+}
+h1::after{
+    content: "";
+    border: 3px solid steelblue; 
+}

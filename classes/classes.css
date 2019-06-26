@@ -1,0 +1,203 @@
+/* feuille de style css */
+
+/******police******/
+
+.txt-12{font-size:  12px;}
+.txt-14{font-size:  14px;}
+.txt-18{font-size:  18px;}
+.txt-20{font-size:  20px;}
+.txt-30{font-size:  30px;}
+
+/******categorie de texte******/
+
+.txt-bold{ font-weight:  bold; }
+.txt-normal{ font-weight:  normal; }
+.txt-uppercase{ text-transform:  uppercase; } /* text majuscule */
+.txt-lowercase{ text-transform:  lowercase; } /* text miniscule */
+.txt-capitalize{ text-transform:  capitalize; } 
+.txt-right{ text-align: right; }
+.txt-left{ text-align: left; }
+.txt-center{ text-align: center; }
+
+/*******couleur*******/
+
+.color-black{ color: black; }
+.color-white{ color: white; }
+.color-red{ color: red; }
+.color-blue{ color: blue; }
+.color-green{ color: green; }
+.color-gray{ color: gray; }
+.color-yellow{ color: yellow; }
+
+/****bordure**************/
+
+.border-0{ border: 0px; }
+.border-1{ border: solid 1px black; }
+.border-2{ border: solid 2px black; }
+.border-3{ border: solid 3px black; }
+.border-4{ border: solid 4px black; }
+.border-5{ border: solid 5px black; }
+.border-red{ border: solid ; border-color: red; }
+.border-yellow{ border: solid ; border-color: yellow; }
+.border-blue{ border: solid ; border-color: blue; }
+.border-black{ border: solid ; border-color: black; }
+.border-green{ border: solid ; border-color: green; }
+
+/******couleur de font************/
+
+.bg-blue{ background-color: blue; }
+.bg-green{ background-color: green; }
+
+/***** espacement: padding, margin et spacing *******/
+
+/* padding */
+.pad-0{ padding: 0; }
+.pad-5{ padding: 5px;  }
+.pad-10{ padding: 10px;  }
+.pad-15{ padding: 15px;  }
+.pad-20{ padding: 20px;  }
+.pad-25{ padding: 25px;  }
+.pad-30{ padding: 30px;  }
+.pad-40{ padding: 40px;  }
+.pad-50{ padding: 50px;  }
+
+/* padding horizontal*/
+.pad-x-0{ padding-left: 0; padding-right: 0 }
+.pad-x-5{ padding-left: 5px; padding-right: 5px; }
+.pad-x-10{ padding-left: 10px; padding-right: 10px; }
+.pad-x-15{ padding-left: 15px; padding-right: 15px; }
+.pad-x-20{ padding-left: 20px; padding-right: 20px;}
+.pad-x-30{ padding-left: 30px; padding-right: 30px;}
+.pad-x-40{ padding-left: 40px; padding-right: 40px;}
+.pad-x-50{ padding-left: 50px; padding-right: 50px;}
+
+/* padding vertical*/
+.pad-y-0{ padding-top: 0; padding-bottom: 0; }
+.pad-y-5{ padding-top:: 5px; padding-bottom: 5px;}
+.pad-y-10{ padding-top:: 10px; padding-bottom: 10px;}
+.pad-y-15{ padding-top:: 15px; padding-bottom: 15px;}
+.pad-y-20{ padding-top:: 20px; padding-bottom: 20px;}
+.pad-y-30{ padding-top:: 30px; padding-bottom: 30px;}
+.pad-y-40{ padding-top:: 40px; padding-bottom: 40px;}
+.pad-y-50{ padding-top:: 50px; padding-bottom: 50px;}
+
+/* padding top*/
+.pad-t-0{ padding-top: 0;  }
+.pad-t-5{ padding-top:5px;  }
+.pad-t-10{ padding-top: 10px;  }
+.pad-t-15{ padding-top: 15px;  }
+.pad-t-20{ padding-top: 20px;  }
+.pad-t-25{ padding-top: 25px;  }
+.pad-t-30{ padding-top: 30px;  }
+.pad-t-40{ padding-top: 40px;  }
+.pad-t-50{ padding-top: 50px;  }
+
+/* padding left*/
+.pad-l-0{ padding-left: 0;  }
+.pad-l-5{ padding-left: 5px;  }
+.pad-l-10{ padding-left: 10px;  }
+.pad-l-15{ padding-left: 15px;  }
+.pad-l-20{ padding-left: 20px;  }
+.pad-l-30{ padding-left: 30px;  }
+.pad-l-40{ padding-left: 40px;  }
+.pad-l-50{ padding-left: 50px;  }
+
+/* padding right*/
+.pad-r-0{ padding-right: 0;  }
+.pad-r-5{ padding-right: 5px;  }
+.pad-r-10{ padding-right: 10px;  }
+.pad-r-15{ padding-right: 15px;  }
+.pad-r-20{ padding-right: 20px;  }
+.pad-r-15{ padding-right: 25px;  }
+.pad-r-30{ padding-right: 30px;  }
+.pad-r-40{ padding-right: 40px;  }
+.pad-r-50{ padding-right: 50px;  }
+
+/* padding bottom*/
+.pad-b-0{ padding-bottom: 0;  }
+.pad-b-5{ padding-bottom: 5px;  }
+.pad-b-10{ padding-bottom: 10px;  }
+.pad-b-15{ padding-bottom: 15px;  }
+.pad-b-20{ padding-bottom: 20px;  }
+.pad-b-25{ padding-bottom: 25px;  }
+.pad-b-30{ padding-bottom: 30px;  }
+.pad-b-40{ padding-bottom: 40px;  }
+.pad-b-50{ padding-bottom: 50px;  }
+
+/* margin */
+.marg-0{ margin: 0;  }
+.marg-5{ margin: 5px;  }
+.marg-10{ margin: 10px;  }
+.marg-15{ margin: 15px;  }
+.marg-20{ margin: 20px;  }
+.marg-25{ margin: 25px;  }
+.marg-30{ margin: 30px;  }
+.marg-40{ margin: 40px;  }
+.marg-50{ margin: 50px;  }
+
+.marg-x-0{ margin-left: 0; margin-right: 0px;}
+.marg-x-5{ margin-left: 5px; margin-right: 5px; }
+.marg-x-10{ margin-left: 10px; margin-right: 10px;}
+.marg-x-15{ margin-left: 15px; margin-right: 15px;}
+.marg-x-20{ margin-left: 20px; margin-right: 20px;}
+.marg-x-25{ margin-left: 25px; margin-right: 25px; }
+.marg-x-30{ margin-left: 30px; margin-right: 30px; }
+.marg-x-40{ margin-left: 40px; margin-right: 40px; }
+.marg-x-50{ margin-left: 50px; margin-right: 50px; }
+
+.marg-y-0{ margin-top: 0; margin-bottom: 0; }
+.marg-y-5{ margin-top: 5px; margin-bottom: 5px; }
+.marg-y-10{ margin-top: 10px; margin-bottom: 10px; }
+.marg-y-15{ margin-top: 15px; margin-bottom: 15px; }
+.marg-y-20{ margin-top: 20px; margin-bottom: 20px; }
+.marg-y-25{ margin-top: 25px; margin-bottom: 25px; }
+.marg-y-30{ margin-top: 30px; margin-bottom: 30px; }
+.marg-y-40{ margin-top: 40px; margin-bottom: 40px; }
+.marg-y-50{ margin-top: 50px; margin-bottom: 50px; }
+
+.marg-r-0{ margin-right: 0;  }
+.marg-r-5{ margin-right: 5px;  }
+.marg-r-10{ margin-right: 10px;  }
+.marg-r-15{ margin-right: 15px;  }
+.marg-r-20{ margin-right: 20px;  }
+.marg-r-25{ margin-right: 25px;  }
+.marg-r-30{ margin-right: 30px;  }
+.marg-r-40{ margin-right: 40px;  }
+.marg-r-50{ margin-right: 50px;  }
+
+.marg-l-0{ margin-left: 0;  }
+.marg-l-5{ margin-left: 5px;  }
+.marg-l-10{ margin-left: 10px;  }
+.marg-l-15{ margin-left: 15px;  }
+.marg-l-20{ margin-left: 20px;  }
+.marg-l-25{ margin-left: 25px;  }
+.marg-l-30{ margin-left: 30px;  }
+.marg-l-40{ margin-left: 40px;  }
+.marg-l-50{ margin-left: 50px;  }
+
+.marg-b-0{ margin-bottom: 0; }
+.marg-b-5{ margin-bottom: 5px;}
+.marg-b-10{ margin-bottom: 10px;}
+.marg-b-15{ margin-bottom: 15px;}
+.marg-b-20{ margin-bottom: 20px;}
+.marg-b-25{ margin-bottom: 25px;}
+.marg-b-30{ margin-bottom: 30px;}
+.marg-b-40{ margin-bottom: 40px; }
+.marg-b-50{ margin-bottom: 50px;}
+
+.marg-t-0{ margin-top: 0;  }
+.marg-t-5{ margin-top: 5px;  }
+.marg-t-10{ margin-top: 10px;  }
+.marg-t-15{ margin-top: 15px;  }
+.marg-t-20{ margin-top: 20px;  }
+.marg-t-25{ margin-top: 25px;  }
+.marg-t-30{ margin-top: 30px;  }
+.marg-t-40{ margin-top: 40px;  }
+.marg-t-50{ margin-top: 50px;  }
+
+
+
+
+
+
+

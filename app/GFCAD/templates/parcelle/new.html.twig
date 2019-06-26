@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="card">
+        <div class="card-body">
+            <h1 class="text-center">Ajouter une parcelle</h1><br/>
+
+            {# read and display just one flash message type #}
+            <div id="message">
+                {% for message in app.flashes('success') %}
+                    <div class="alert alert-success text-center">
+                        {{ message }}✅
+                    </div>
+                {% endfor %}
+                {% for message in app.flashes('warming') %}
+                    <div class="alert alert-warning text-center">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <fieldset>
+                <div class="row">
+                   <div class="col-md-12">
+                       {{ form_start(form) }}
+                       <div class="col-md-6">
+                           <div class="form-group">
+                               {{ form_row(form.numero, {'attr': {'class': 'form-control'}}) }}
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="form-group">
+                               {{ form_row(form.section, {'attr': {'class': 'form-control'}}) }}
+                           </div>
+                       </div>
+                       <div class="col-md-12">
+                           <div class="col-md-4">
+                               <div class="form-group">
+                                   {{ form_row(form.cote, {'attr': {'class': 'form-control'}}) }}
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="form-group">
+                                   {{ form_row(form.ordonnee, {'attr': {'class': 'form-control'}}) }}
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="form-group">
+                                   {{ form_row(form.abscisse, {'attr': {'class': 'form-control'}}) }}
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-6 offset-4">
+                           <div class="form-group">
+                               <button type="submit" class="btn btn-primary">Enregistrer</button>
+                           </div>
+                       </div>
+                       {{ form_end(form) }}
+                   </div>
+                </div>
+            </fieldset>
+
+            <br/>
+        </div>
+    </div>
+{% endblock %}

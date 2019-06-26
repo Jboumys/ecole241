@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>My ga Gabon</title>
+        <link rel="icon" type="image/icon" href="stylesheet/img/favicon.ico" />
+        <!--<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />-->
+        <style>
+            body{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                left: 0;
+                right: 0;
+                font-family: arial, sans-serif;
+            }
+            .container{
+                width: 100%;
+                height: auto;
+                background-image: url("stylesheet/img/lbv.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            header{
+                width: 100%;
+                height: auto;
+                background-color: #009247;
+                padding-bottom: 2px;
+            }
+            .bandeau{
+                padding: 5px;
+            }
+            ul li{
+                display: inline;
+            }
+            a:link{
+                text-decoration: none;
+            }
+            .menu{
+                margin-left: 200px ;
+            }
+            header ~ div{
+                padding: 20px;
+                margin: 50px;
+                height: 300px;
+            }
+            form label{
+                padding: 15px;
+                margin: 15px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+            }
+            header ~ div form{
+                width: auto;
+                margin: 100px;
+                padding: 20px;
+            }
+            footer{
+                background-color:  #009247;
+                padding: 15px;
+            }
+            table{
+                width: 100%;
+                text-align: center;
+            }
+            input[type=text]{
+                width: 80%;
+                margin: 15px;
+                padding: 15px;
+                border-radius: 5px;
+                text-align: right;
+                /*background-color: darkgray; */
+                opacity: 0.9;
+            }
+            input[type=text]:focus{
+                background-color: #ffffff;
+            }
+            input[type=submit],input[type=text]{
+                padding: 15px 15px;
+            }
+            input[type=submit]{
+                border: 2px solid #009247;
+                background-color: #009247;
+                color: white;
+            }
+            input[type=submit]:hover{
+                background-color: darkgreen;
+            }
+            tr,th{
+                color:white;
+            }
+            td a{
+                color: yellow;
+            }
+            .bandeau{
+                padding-bottom: 10px;
+            }
+            .bandeau ul,.bandeau form{
+                display: inline;
+            }
+            .panneau img{
+                margin: 10px 5px;
+                border-radius: 45%;
+                float: right;
+                width: 70px;
+            }
+            .login{
+                color: yellow;
+                font-size: 14px;
+            }
+            .bandeau ul li a{
+                font-size: 14px;
+                color: #ffffff;    /* coloration des liens du bandeau*/
+            }
+            ul.menu li a{
+                color: #ffffff;
+                padding-left: 20px;
+
+            }
+            .cadre-menu ul li a:hover, .login ul li a:hover,.menu ul li a{
+                background-color: yellowgreen;
+                border: yellowgreen;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .menu ul li,.menu ul li a,.menu ul li button{
+
+            }
+            button{
+                padding: 15px 32px;
+                background-color: yellow;
+                border: 2px solid transparent;
+                margin: 0;
+            }
+            button:hover{
+                background-color: yellowgreen;
+            }
+            hr{
+                color: #ffffff;
+            }
+            .bandeau form select{
+                border-color: #ffffff;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                /*background-color: darkseagreen;*/
+                color: #ffffff;
+                background-color: transparent;
+            }
+            ul.login li a{
+                padding: 5px;
+                border: white;
+                border-radius: 5px;
+                /*background-color: darkseagreen;*/
+                font-weight: bold;
+            }
+            strong{ color: yellow; }
+            header ~ div form label{
+                font-size: 24px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="bandeau">
+                    <form>
+                        <select name="choix_lang">
+                            <option selected value="francais">FR</option>
+                            <option value="ang">EN</option>
+                        </select>
+                    </form>
+                    <ul class="login">
+                        <li><a href="#">login admin</a></li>
+                    </ul>
+                </div>
+
+                <div class="panneau">
+                    <img src="stylesheet/img/logo.png" alt="logo myga" />
+                </div>
+                <hr/>
+               <div class="cadre-menu">
+                   <ul class="menu">
+                       <li><a href="#">Accueil</a></li>
+                       <li><a href="#">Bureaux d'enregistrement</a></li>
+                       <li><a href="#">Contactez-nous</a></li>
+                       <li><a href="#">A propos de</a></li>
+                   </ul>
+               </div>
+            </header>
+
+            <div>
+                <form>
+                    <label for="dn" >Enregistrez votre domaine <strong>.GA</strong> GRATUIT</label>
+                    <input type="text" name="dn" value=".ga" id="dn"/>
+                    <input type="submit" name="enreg" value="GO" />
+                </form>
+            </div>
+
+            <footer>
+                <table>
+                    <tr>
+                        <th>My GA</th>
+                        <th>Société</th>
+                        <th>Assistance</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Accueil</a></td>
+                        <td><a href="#">A propos de</a></td>
+                        <td><a href="#">FAQ</a></td>
+                        <td>BP 798 Libreville Gabon</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">WHOIS</a></td>
+                        <td><a href="#">Politique</a></td>
+                        <td><a href="#">Contactez-nous</a></td>
+                        <td>Email: <a href="mailto:aninf@my.ga">aninf@my.ga</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="#">Bureaux d'enregistrement</a></td>
+                        <td><a href="#">API</a></td>
+                        <td><a href="#"></a></td>
+                    </tr>
+                </table>
+                <!--<hr style="width: 50%; margin: 20px auto;"/>-->
+                <!--<img src="stylesheet/img/aninf.png" alt="logo de l'aninf">-->
+            </footer>
+
+        </div>
+    </body>
+</html>

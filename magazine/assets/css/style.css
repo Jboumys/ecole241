@@ -1,0 +1,132 @@
+/* mon style css */
+
+
+.content{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.nav{
+	height: 40%;
+	background-color: lightseagreen;
+
+}
+
+.nav .menu a:link{
+	color: white;
+	text-decoration: none;
+}
+
+.menu li{
+	display: inline-block;
+	padding: 10px;
+	font-family: montserrat;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+.sous-menu li{
+	display: inline-block;
+	padding: 10px;
+	font-family: montserrat;
+	text-transform: uppercase;
+
+}
+
+.section-1{
+	width: 100%;
+	background-image: url("../img/fond-top.jpg");
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar{height: 60px;}
+
+/************style applique au texte******************/
+.text-white{color: white;}
+.text-capitalize{text-transform: capitalize; }
+
+
+.text-img{
+	font-family: 'Merriweather', serif;
+	font-size: 55px;
+	text-align: justify;
+	font-weight: bold;
+	margin-top: 150px;
+	padding: 0 100px;
+
+}
+
+
+*{padding: 0; margin:0;}
+
+.dashimag,h1{
+	height: 60px;
+	text-align: center;
+	padding: 20px;
+	font-family: 'motion picture personal';
+	font-size: 40px;
+}
+
+/**************style applique au lien***************/
+.menu a:link{
+	color: white;
+	text-decoration: none;
+}
+
+button a:link{
+	text-decoration: none;
+}
+
+
+.sous-menu a:link{
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+}
+
+
+/************importation**************************/
+
+@font-face {
+	font-family: "montserrat";
+	src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: "motion picture personal";
+	src: url("../fonts/MotionPicture_PersonalUseOnly.ttf");
+
+}
+
+/*************espacement entre bloc****************/
+.clearn{padding: 15px;}
+
+/*************bloc d'images*********************/
+.bloc-img-1{
+	padding: 430px 60px 60px;
+}
+
+.clean-img{ padding-left: 20px; }
+
+/************debordement**********************/
+
+
+
+/**********style bouton**************************/
+.btn-green{
+	width: 60px;
+	height: 20px;
+	background-color: lightseagreen;
+	position: absolute;
+	left: 20px;
+	margin-top: 80px;
+	margin-left: 100px;
+	border: solid 1px ;
+	border-radius: 10px;
+	padding: 2px;
+
+}
+

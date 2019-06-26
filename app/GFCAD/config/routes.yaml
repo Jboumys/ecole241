@@ -1,0 +1,23 @@
+home:
+  path: /
+  controller: App\Controller\HomeController::index
+
+dashboard:
+  path: /dashboard
+  controller: App\Controller\DashboardController::index
+
+apropos:
+  path: /apropos
+  controller: App\Controller\AproposController::index
+
+aide:
+  path: /aide
+  controller: App\Controller\AideController::index
+
+contact:
+  path: /contact
+  controller: App\Controller\ContactController::index
+
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index

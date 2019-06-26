@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Accueil</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
+    <link href="fonts/fontawesome-free-5.7.0-web/css/all.css" rel="stylesheet"> 
+    <link href="bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-4.1.3-dist/css/style.css" rel="stylesheet">
+    
+    <link href="bootstrap-4.1.3-dist/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+	<style type="text/css">
+		
+*{font-family: 'PT Sans Caption', sans-serif;}
+		/*style de la nav bar*/
+        .navbar .dropdown-toggle, .navbar .dropdown-menu a {
+    cursor: pointer;
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+.marg-5em{margin: auto 5em;}
+header{background-color: #046381;}
+.ounous-sommes{background-color: }
+
+@media (min-width: 767px) {
+    .navbar .dropdown-toggle:not(.nav-link)::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .5em;
+        vertical-align: 0;
+        border-bottom: .3em solid transparent;
+        border-top: .3em solid transparent;
+        border-left: .3em solid;
+    }
+}/*fin du style de la nav bar*/
+
+
+
+.content {
+    padding: 30px;
+    background: #f1f3fa;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+/* Portlet */
+.portlet {
+    background: #fff;
+    padding: 20px;padding-top: 10em;
+}
+
+.portlet.portlet-gray {
+    background: #f7f7f7;
+}
+
+.portlet.portlet-bordered {
+    border: 1px solid #eee;
+}
+
+/* Portlet Title */
+.portlet-title {
+    padding: 0;
+    min-height: 40px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 18px;
+}
+
+.caption {
+    float: left;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.caption.caption-green .caption-subject,
+.caption.caption-green i {
+    color: #4db3a2;
+    font-weight: 200;
+}
+
+.caption.caption-red .caption-subject,
+.caption.caption-red i {
+    color: #e26a6a;
+    font-weight: 200;
+}
+
+.caption.caption-purple .caption-subject,
+.caption.caption-purple i {
+    color: #8775a7;
+    font-weight: 400;
+}
+
+.caption i {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+.caption-subject {
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.caption-helper {
+    padding: 0;
+    margin: 0;
+    line-height: 13px;
+    color: #9eacb4;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* Actions */
+.actions {
+    float: right;
+    display: inline-block;
+}
+
+.actions a {
+    margin-left: 3px;
+}
+
+.actions .btn {
+    color: #666;
+    padding: 3px 9px;
+    font-size: 13px;
+    line-height: 1.5;
+    background-color: #fff;
+    border-color: #ccc;
+    border-radius: 50px;
+}
+
+.actions .btn i {
+    font-size: 12px;
+}
+
+.actions .btn:hover {
+    background: #f2f2f2;
+}
+
+/* Pagination */
+.pagination {
+    margin: -3px 0 0;
+    border-radius: 50px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #8775a7;
+    background: #f7f7f7;
+}
+
+.pagination > li:hover > a,
+.pagination > li.active > a,
+.pagination > li.active:hover > a {
+    color: #fff;
+    background: #8775a7;
+    border-color: #8775a7;
+}
+
+/* Inputs */
+.inputs {
+    float: right;
+    display: inline-block;
+    padding: 4px 0;
+    margin-top: -10px;
+}
+
+.input-inline {
+    width: 240px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Tab */
+.portlet-title > .nav-tabs {
+    background: none;
+    margin: 0;
+    float: right;
+    display: inline-block;
+    border: 0;
+}
+
+.portlet-title > .nav-tabs > li {
+    background: none;
+    margin: 0;
+    border: 0;
+}
+
+.portlet-title > .nav-tabs > li > a {
+    background: none;
+    border: 0;
+    padding: 2px 10px 13px;
+    color: #444;
+}
+
+.portlet-title > .nav-tabs > li.active,
+.portlet-title > .nav-tabs > li.active:hover {
+    border-bottom: 4px solid #f3565d;
+    position: relative;
+  }
+
+  .portlet-title > .nav-tabs > li:hover {
+    border-bottom: 4px solid #f29b9f;
+  }
+
+.portlet-title > .nav-tabs > li.active > a,
+.portlet-title > .nav-tabs > li:hover > a {
+    color: #333;
+    background: #fff;
+    border: 0;
+}
+
+/* Btn Circle */
+.actions .btn.btn-circle {
+    width: 28px;
+    height: 28px;
+    padding: 3px 7px;
+    text-align: center;
+}
+
+.actions .btn.btn-circle i {
+    font-size: 11px;
+}
+
+/* Btn Grey Salsa */
+.actions .btn.grey-salsa {
+    border: none;
+    margin-left: 3px;
+    box-shadow: none;
+    border-radius: 50px !important;
+}
+
+.actions .btn.grey-salsa.active {
+    color: #fafcfb;
+    background: #8e9bae;
+}
+  .actions .grey-salsa.btn:hover,
+  .actions .grey-salsa.btn:focus,
+  .actions .grey-salsa.btn:active,
+  .actions .grey-salsa.btn.active {
+    color: #fafcfb;
+    background: #97a3b4;
+}
+
+/* Btn Red */
+.actions .btn.btn-red.active,
+.actions .btn.btn-red:hover {
+    color: #fff;
+    box-shadow: none;
+    background: #e26;
+    border-color: #e26a6a;
+}
+
+/* Btn Red */
+.actions .btn.btn-purple.active,
+.actions .btn.btn-purple:hover {
+    color: #fff;
+    box-shadow: none;
+    background: #8775a7;
+    border-color: #8775a7;
+}
+
+
+
+
+
+nav{
+  width: 750px;
+  margin: 1em auto;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.dropdown{ 
+  position: relative; 
+  width: 100%; 
+}
+
+ul.dropdown li{ 
+  font-weight: bold; 
+  float: left; 
+  width: 180px; 
+  position: relative;
+  background: #ecf0f1;
+}
+
+ul.dropdown a:hover{ 
+  color: #000; 
+}
+
+ul.dropdown li a { 
+  display: block; 
+  padding: 20px 8px;
+  color: #34495e; 
+  position: relative; 
+  z-index: 2000; 
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+ul.dropdown li a:hover,
+ul.dropdown li a.hover{ 
+  background: #3498db;
+  position: relative;
+  color: #fff;
+  transition:0.5s ease;
+}
+
+ul.dropdown ul{ 
+ display: none;
+ position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 180px; 
+  z-index: 1000;
+}
+
+
+ul.dropdown ul li { 
+  font-weight: normal; 
+  background: #f6f6f6; 
+  color: #000; 
+  border-bottom: 1px solid #ccc; 
+}
+
+ul.dropdown ul li a{ 
+  display: block; 
+  color: #34495e !important;
+  background: #eee !important;
+} 
+
+ul.dropdown ul li a:hover{
+  display: block; 
+  background: #3498db !important;
+  color: #fff !important;
+} 
+
+ul.dropdown ul li a:hover{
+  display: block; 
+  background: #3498db;
+  color: #fff;
+} 
+
+.drop > a{
+  position: relative;
+}
+
+.drop > a:after{
+    content: "";
+    position: absolute;
+    right: 11px;
+    top: 46%;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #333;
+    border-right: 10px solid transparent;
+    z-index: 999;
+}
+
+.drop > a:hover:after{
+  content:"";
+   border-left: 10px solid transparent;
+  border-top: 10px solid #fff;
+  border-right: 10px solid transparent;
+}
+	</style>
+  </head>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+  <body style="background-color: rgba(145,187,201,0.2);">
+
+    <div class="container-fluid">
+	<header>
+    <div class="navbar navbar-expand-md   mb-4 marg-5em" role="navigation" style="background-color: #046381">
+        <a class="navbar-brand text-white" href="#"><img src="assets/img/logo_lekoura.jpg" alt="" height="36vh"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Par pays</option>
+                    <option value="1">tout</option>
+                    <option value="2">Gabon</option>
+                    <option value="3">Canada</option>
+                    <option value="3">France</option>
+                  </select> 
+                  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Par Secteur </option>
+                    <option value="1">tout</option>
+                    <option value="2">Numérique</option>
+                    <option value="3">Agricole</option>
+                    <option value="3">Industrielle</option>
+                  </select> 
+
+
+                <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Search</button>
+            </form>
+            
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active ounous-sommes">
+                    <a class="nav-link text-white" href="#" style="background-color: #046381">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" target="_blank">profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" target="_blank"><i class="far fa-bell"></i></a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="http://fontenele.github.io/bootstrap-navbar-dropdowns/" target="_blank"><i class="far fa-envelope text-white"></i></a>
+                </li>
+               
+                <!-- user -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-lock text-white"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li class="dropdown-item" href="#"><a href="#" class="fa fa-user text-black"> jboumys@gmail.com</a></li>
+                        <li class="dropdown-item" href="#"><a class="fa fa-wrench text-black" href="#"> Paramètre</a></li>
+                        <li class="dropdown-item" href="#"><a class="fa fa-key text-black" href="index.html"> Se deconnecter</a></li>
+                        
+                    </ul>
+
+                </li>
+                
+                <!-- end user -->
+                <li class="nav-item">
+               
+            </ul>
+           
+        </div>
+    </div>
+
+</header>
+
+	
+	<div class="row">
+
+		<div class="col-md-12">
+
+			<div class="row">
+
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-12">
+							<h4>
+								Voulez-vous vous connecter à?
+							</h4>
+							<div class="row">
+
+								<div class="col-md-4">
+									<a class="no-underline text-black" href="portfolio_snippet (copie).html" >
+										<div class="card-img rounded">
+										<img class="card-img-top" alt="Bootstrap Thumbnail First" src="assets/img/14656308_10209060788209718_7705489728510648564_n.jpg" height="308px">
+										<div class="card-block">
+											<h5 class="card-title text-center margin-bottom-5">
+												Sylvère BOUSSAMBA
+											</h5>
+											<p class="card-text text-center margin-bottom-5">
+												Coach en Leadership et Mentor-Certifié Jhon MaxWell
+											</p>
+											<p class="text-center">
+												<a class="btn btn-primary" href="#">Se connecter</a> 
+											</p>
+										</div>
+									</div>
+									</a>
+								</div>
+								<div class="col-md-4">
+									<a class="no-underline text-black" href="#" >
+										<div class="card-img rounded">
+										<img class="card-img-top" alt="Bootstrap Thumbnail First" src="assets/img/Henri-Claude-Oyima.png">
+										<div class="card-block">
+											<h5 class="card-title text-center margin-bottom-5">
+												Henry Claude OYIMA
+											</h5>
+											<p class="card-text text-center margin-bottom-5">
+												PDG & fondateur du Groupe BGFI 
+											</p>
+											<p class="text-center">
+												<a class="btn btn-primary" href="#">Se connecter</a> 
+											</p>
+										</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-md-4">
+									<a class="no-underline text-black" href="portfolio_snippet.html" >
+										<div class="card-img rounded">
+										<img class="card-img-top" alt="Bootstrap Thumbnail First" src="assets/img/10930930_10202629294572503_5554474346466009416_n.jpg" height="300px">
+										<div class="card-block">
+											<h5 class="card-title text-center margin-bottom-5">
+												Roland OLOUBA OYABI
+											</h5>
+											<p class="card-text text-center margin-bottom-5">
+												PDG du Groupe 360° Visibility.com
+											</p>
+											<p class="text-center">
+												<a class="btn btn-primary" href="#">Se connecter</a> 
+											</p>
+										</div>
+
+									</div>
+
+									</a>
+								</div>
+								<div class="col-md-4">
+
+								</div>
+
+							</div>
+
+						</div>
+					
+						<div class="col-md-12">
+							<div class=" margin-bottom-30">
+                <!-- BEGIN Portlet PORTLET-->
+                <div class="portlet">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                            <img src="assets/img/logo_comilog.png " alt="profil" height="50vh">
+                            <span class="caption-subject text-uppercase"><a href="#"> Comilog</a></span>
+                            <span class="caption-helper">hier-06h05</span>
+                        </div>
+                        <div class="actions">
+                            <a href="javascript:;" class="btn">
+                                
+                                <i class="fa fa-thumbs-up fa-3x"></i>
+                            </a>
+                            <a href="javascript:;" class="btn">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                <i class="far fa-comment-alt fa-2x"></i>
+                            </a>
+                            <a href="javascript:;" class="btn btn-circle">
+                                <i class="glyphicon glyphicon-resize-full"></i>
+                                <i class="far fa-share-square fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <p>ERAMET, à travers sa filiale COMILOG, organise un café
+numérique à Libreville le samedi 13 octobre 2018 à l’Institut Français sous le thème : “Eramet et la transformation numérique des métiers de la mine au Gabon”.
+
+L’évènement sur le temps d’une demi-journée, permettra à la COMILOG d’échanger avec les passionnés du digital et les entrepreneurs autour de son projet de transformation numérique.</p>
+                        <img src="assets/img/Eramet-.jpg" width="100%" height="auto">
+                    </div>
+                </div>
+                <div class="portlet">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                            <img src="assets/img/Image10.png" alt="profil" height="50vh">
+                            <span class="caption-subject text-uppercase"><a href="#"> LoLA I</a></span>
+                            <span class="caption-helper">hier-18h15</span>
+                        </div>
+                        <div class="actions">
+                            <a href="javascript:;" class="btn">
+                                
+                                <i class="fa fa-thumbs-up fa-3x"></i>
+                            </a>
+                            <a href="javascript:;" class="btn">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                <i class="far fa-comment-alt fa-2x"></i>
+                            </a>
+                            <a href="javascript:;" class="btn btn-circle">
+                                <i class="glyphicon glyphicon-resize-full"></i>
+                                <i class="far fa-share-square fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <h4>Tchadinfos</h4>
+                        <p>Du 05 au 16 février 2018, onze femmes entrepreneures d’Afrique francophone ont été choisies comme vedettes d’une série d’articles de presse par onze sites d’information. Ces femmes mises en exergue par les Nouveaux acteurs de l’information en ligne africaine (NAILA), une initiative de l’Agence française de coopération médias CFI sont issues de différentes catégories socioprofessionnelles mais, ont en commun l’esprit entrepreneurial. </p>
+                    </div>
+                </div>
+                <div class="portlet">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                            <img src="assets/img/18592_n.jpg" alt="profil" height="50vh">
+                            <span class="caption-subject text-uppercase"><a href="#"> Sylvie T</a></span>
+                            <span class="caption-helper">hier-18h15</span>
+                        </div>
+                        <div class="actions">
+                            <a href="javascript:;" class="btn">
+                                
+                                <i class="fa fa-thumbs-up fa-3x"></i>
+                            </a>
+                            <a href="javascript:;" class="btn">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                <i class="far fa-comment-alt fa-2x"></i>
+                            </a>
+                            <a href="javascript:;" class="btn btn-circle">
+                                <i class="glyphicon glyphicon-resize-full"></i>
+                                <i class="far fa-share-square fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <p>Appel d'offre:
+                         L'école241 dans le cader de l'extension de ses activités 2019-2021 recherche
+                         recherche un sous-traitant pour la maintenance de son paque informatique.
+                         Conditions: etre un entrepreneur(se) ayant fait ses preuves dans le domaine du numérique
+                         ou encore une startup spécialisée dans le numérique.
+                         Etre basée à Libreville
+                         Durée du contrat: 2ans
+
+                        </p>
+                       <img src="assets/img/50858156_10215198034118938_6605767195689484288_n.jpg" width="100%" >
+                    </div>
+                </div>
+                <div class="portlet">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                            <img src="assets/img/newBSlogo1.png" alt="profil" height="50vh">
+                            <span class="caption-subject text-uppercase"><a href="#"> Bs-Gabon</a></span>
+                            <span class="caption-helper">hier-18h15</span>
+                        </div>
+                        <div class="actions">
+                            <a href="javascript:;" class="btn">
+                                
+                                <i class="fa fa-thumbs-up fa-3x"></i>
+                            </a>
+                            <a href="javascript:;" class="btn">
+                                <i class="glyphicon glyphicon-paperclip"></i>
+                                <i class="far fa-comment-alt fa-2x"></i>
+                            </a>
+                            <a href="javascript:;" class="btn btn-circle">
+                                <i class="glyphicon glyphicon-resize-full"></i>
+                                <i class="far fa-share-square fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <p>Dans le cadre des rencontres que nous organisons, BS Gabon est fier de vous convier à un événement que nous tenons avec notre partenaire Konica Minolta. Réservez la date du 10 Novembre pour prendre part à la matinée technologique à l’hôtel Méridien Ré-NDAMA sur le thème des Solutions d’impression Optimisées pour les entreprises suivi d’un déjeuner .</p>
+                       <img src="assets/img/Couverture-de-page-facebook-01-450x300.jpg" width="100%" height="auto">
+                    </div>
+                </div>
+                <!-- END Portlet PORTLET-->
+            </div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- start contact -->
+				<div class="col-md-4" style="background-color:  #fff;">
+					
+					<div class="col-md-12 col-xl-12 chat">
+					<div class=" mb-sm-12 mb-md-0 contacts_card fixed-right" style="background-color:  #fff;">
+					<div class="card-header" >
+						<div class="input-group">
+							<input type="text" placeholder="Search..." name="" class="form-control search text-white">
+							<div class="input-group-prepend">
+								<span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="card-body contacts_body">
+						<ul class="contacts">
+						<li class="select-contact">
+							<a class="no-underline" href="#" data-toggle="modal" data-target="#myModal">
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img src="assets/img/Image1.png" class="rounded-circle user_img">
+										<span class="online_icon"></span>
+									</div>
+									<div class="user_info">
+										<span>OBIANG Fred</span>
+										<p>Fred est en ligne</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="select-contact">
+							<a class="no-underline" href="#" data-toggle="modal" data-target="#myModal">
+								<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/Image8.png" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Sahar Darya</span>
+									<p>En ligne il y a 7 min</p>
+								</div>
+							</div>
+							</a>
+						</li>
+						<li class="select-contact">
+							<a class="no-underline" href="#" data-toggle="modal" data-target="#myModal">
+								<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/Image10.png" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>LOLA I</span>
+									<p>I est en train d'écrire... </p>
+								</div>
+							</div>
+							</a>
+						</li>
+						<li class="select-contact">
+							<a class="no-underline" href="#" data-toggle="modal" data-target="#myModal">
+								<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/Image9.png" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>MOUSSAVOU Nargis</span>
+									<p>Déconnectée</p>
+								</div>
+							</div>
+							</a>
+						</li>
+						<li class="select-contact">
+							<a class="no-underline" href="#" data-toggle="modal" data-target="#myModal">
+								<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/Image4.png" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>BOULINGUI Jack</span>
+									<p>En ligne il y a 30s</p>
+								</div>
+							</div>
+							</a>
+						</li>
+						</ul>
+					</div>
+					<div class="card-footer"></div>
+				</div>
+			</div>
+
+
+		<!-- The Modal -->
+		  <div class="modal fade" id="myModal">
+		    <div class="modal-dialog modal-xl">
+		      <div class="modal-chat" style="background-color: #fff;">
+		      
+		        <!-- Modal Header ->
+		        <div class="modal-header">
+		          <h4 class="modal-title">Discution en direct</h4>
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        </div>
+		        
+		        <!-- start Modal body -->
+		        <div class="modal-body">
+		          <!-- start chat -->
+				<div class="col-md-12 col-xl-12 chat">
+					<span style="color: #fff;">Discution en directe</span>
+					<div class="" style="background-color: #fff;">
+						<div class="card-header msg_head">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/Image3.png" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Chat with Maryam Naz</span>
+									<p>1767 Messages</p>
+								</div>
+								<div class="video_cam">
+									<span><i class="fas fa-video"></i></span>
+									<span><i class="fas fa-phone"></i></span>
+								</div>
+							</div>
+							<span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
+							<div class="action_menu">
+								<ul>
+									<li><i class="fas fa-user-circle"></i> View profile</li>
+									<li><i class="fas fa-users"></i> Add to close friends</li>
+									<li><i class="fas fa-plus"></i> Add to group</li>
+									<li><i class="fas fa-ban"></i> Block</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-body msg_card_body">
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="assets/img/Image3.png" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									Hi, how are you samim?
+									<span class="msg_time">8:40 AM, Today</span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									Hi Maryam i am good tnx how about you?
+									<span class="msg_time_send">8:55 AM, Today</span>
+								</div>
+								<div class="img_cont_msg">
+							<img src="assets/img/Image1.png" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="assets/img/Image3.png" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									I am good too, thank you for your chat template
+									<span class="msg_time">9:00 AM, Today</span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									You welcome Maryam
+									<span class="msg_time_send">9:05 AM, Today</span>
+								</div>
+								<div class="img_cont_msg">
+							<img src="assets/img/Image3.png" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="assets/img/Image3.png" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									I am looking for your next templates
+									<span class="msg_time">9:07 AM, Today</span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									Ok, thank you have a good day
+									<span class="msg_time_send">9:10 AM, Today</span>
+								</div>
+								<div class="img_cont_msg">
+						<img src="assets/img/Image3.png" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="assets/img/Image3.png" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									Bye, see you
+									<span class="msg_time">9:12 AM, Today</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="input-group">
+								<div class="input-group-append">
+									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+								</div>
+								<textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+								<div class="input-group-append">
+									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		          <!-- end chat -->
+		        </div><!-- end modal -->
+
+		      
+		        
+		        <!-- Modal footer ->
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        </div-->
+		        
+		      </div>
+		    </div>
+		  </div>
+
+
+		<!-- The Modal acteurs-->
+		 <!-- The Modal -->
+	  			<div class="modal fade" id="acteur">
+			    	<div class="modal-dialog modal-xl">
+				      <div class="modal-content">
+				      
+				        <!-- Modal Header -->
+					        <div class="modal-header">
+					          <h4 class="modal-title">Modal Heading</h4>
+					          <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        </div>
+					        
+					        <!-- Modal body -->
+					        <div class="modal-body">
+					          Modal body..
+					        </div>
+				        
+				        <!-- Modal footer -->
+					        <div class="modal-footer">
+					          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        </div>
+					        
+					      </div>
+					    </div>
+					  </div>
+		        	</div><!-- end modal acteurs -->
+
+				  </div>
+				</div>
+
+				</div>
+				<!-- end contact -->
+			</div>
+		</div>
+	</div>
+
+</div>
+
+    <!--script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script-->
+
+    <script src="bootstrap-4.1.3-dist/js/jquery.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/scripts.js"></script>
+    <script type="text/javascript">
+/*
+* 
+* Credits to https://css-tricks.com/long-dropdowns-solution/
+*
+*/
+
+var maxHeight = 400;
+
+$(function(){
+
+    $(".dropdown > li").hover(function() {
+    
+         var $container = $(this),
+             $list = $container.find("ul"),
+             $anchor = $container.find("a"),
+             height = $list.height() * 1.1,       // make sure there is enough room at the bottom
+             multiplier = height / maxHeight;     // needs to move faster if list is taller
+        
+        // need to save height here so it can revert on mouseout            
+        $container.data("origHeight", $container.height());
+        
+        // so it can retain it's rollover color all the while the dropdown is open
+        $anchor.addClass("hover");
+        
+        // make sure dropdown appears directly below parent list item    
+        $list
+            .show()
+            .css({
+                paddingTop: $container.data("origHeight")
+            });
+        
+        // don't do any animation if list shorter than max
+        if (multiplier > 1) {
+            $container
+                .css({
+                    height: maxHeight,
+                    overflow: "hidden"
+                })
+                .mousemove(function(e) {
+                    var offset = $container.offset();
+                    var relativeY = ((e.pageY - offset.top) * multiplier) - ($container.data("origHeight") * multiplier);
+                    if (relativeY > $container.data("origHeight")) {
+                        $list.css("top", -relativeY + $container.data("origHeight"));
+                    };
+                });
+        }
+        
+    }, function() {
+    
+        var $el = $(this);
+        
+        // put things back to normal
+        $el
+            .height($(this).data("origHeight"))
+            .find("ul")
+            .css({ top: 0 })
+            .hide()
+            .end()
+            .find("a")
+            .removeClass("hover");
+    
+    });  
+    
+});
+
+
+
+
+</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

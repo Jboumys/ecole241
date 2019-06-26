@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dossiers{% endblock %}
+
+{% block body %}
+
+   <div class="card">
+       <div class="card-body">
+           <div class="row">
+               <div class="col-12 col-md-12">
+                   <br/>
+                   {# read and display just one flash message type #}
+                   <div id="message">
+                       {% for message in app.flashes('success') %}
+                           <div class="alert alert-success text-center">
+                               {{ message }}✅
+                           </div>
+                       {% endfor %}
+                       {% for message in app.flashes('warming') %}
+                           <div class="alert alert-warning text-center">
+                               {{ message }}
+                           </div>
+                       {% endfor %}
+                   </div>
+
+                   <div class="col-md-12 text-center padding-40">
+                       <h1>Dossier n° {{ dossier.matricule }}</h1><br/>
+                       <div class="col-md-4">
+                           <span><b>référence : </b> {{"d"~dossier.dateCreate|date('dmY') }}{{ dossier.id }}</span><br/>
+                           <span><b>Titulaire : </b> <a href="#"> {{ dossier.requerant.identite }} </a></span><br/>
+                       </div>
+                       <div class="col-md-4">
+                           {% if  dossier.parcelle %}
+                               <span><b>Parcelle N° : </b>{% if  dossier.parcelle.numero %} <a href="#">{{ dossier.parcelle.numero }}</a> {% endif %}</span><br/>
+                               <span><b>Section : </b>{% if  dossier.parcelle.section %} <a href="#">{{ dossier.parcelle.section }}</a> {% endif %}</span><br/>
+                               <span><b>Coordonnées : </b>
+                                   {% if  dossier.parcelle.cote and  dossier.parcelle.ordonnee and  dossier.parcelle.abscisse %}
+                                       <a href="#"> {{ dossier.parcelle.cote }} ,</a>
+                                       <a href="#"> {{ dossier.parcelle.ordonnee }} ,</a>
+                                       <a href="#"> {{ dossier.parcelle.abscisse }} ,</a>
+                                   {% else %}
+                                       {{ "null"  }}
+                                   {% endif %}
+                               </span>
+                           {% else %}
+                               <div><a class="btn btn-primary btn-sm" href="{{ path('parcelle_new', {id: dossier.id}) }}">{{ "Saisir les données de la parcelle" }}</a></div>
+                           {% endif %}
+                       </div>
+                       <div class="col-md-4">
+                           <span><b>Créé le : </b> {{ dossier.dateCreate|date('d-m-Y') }}</span><br/>
+                           <span><b>Mise à jour le : </b> {{ dossier.dateMAJ|date('d-m-Y') }}</span><br/>
+                       </div>
+                   </div>
+
+                   <div class="col-md-12">
+                       <div class="border text-center" style="">
+                           <a class="btn btn-default" href="{{ path('fichier_new',{id: dossier.id}) }}">
+                               <img src="{{ asset('stylesheet/img/new_file.jpg') }}" alt="icone nouveau fichier" title="nouveau fichier" width="35">
+                           </a>
+                           <a class="btn btn-default" href="#">
+                               <img src="{{ asset('stylesheet/img/export-file.png') }}" alt="icone nouveau fichier" title="exporter les fichiers" width="40">
+                           </a>
+                           <a href="{{ path('dossier_export', {id: dossier.id}) }}" class="btn btn-default btn-sm" >
+                               <img src="{{ asset('stylesheet/img/folder_export.jpg') }}" alt="icone nouveau dossier" title="exporter le dossier" width="40">
+                           </a>
+                       </div>
+                       <div class="card">
+                           <div class="card-body">
+                               <table class="table table-bordered text-center">
+                                   <thead>
+                                   <tr>
+                                       <th>Fichier</th>
+                                       <th>Type </th>
+                                       <th>Date d'insertion</th>
+                                       <th>Date mise à jour</th>
+                                       <th colspan="4">Action</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   {% for fichier in fichiers %}
+                                       <tr>
+                                           <td>{{ 'fichier' }}</td>
+                                           <td>{{ fichier.typeFichier.nom }}</td>
+                                           <td>{{ fichier.dateAdd|date('d-m-Y')}}</td>
+                                           <td>{{ fichier.dateMAJ|date('d-m-Y')}}</td>
+                                           <td><a class="btn btn-default btn-sm" href=""><img src="{{ asset('stylesheet/img/export-file.png') }}" alt="icone nouveau fichier" title="exporter le fichier" width="20"></a></td>
+                                           <td><a class="btn btn-primary btn-sm" href="{{ path('fichier_show',{id: fichier.id}) }}" target="_blank" title="détails"><i class="fa fa-eye"></i></a></td>
+                                           <td><a class="btn btn-success btn-sm" href="" title="éditer"><i class="fa fa-edit"></i></a></td>
+                                           <td><a class="btn btn-danger btn-sm" href="" title="supprimer"><i class="fa fa-trash"></i></a></td>
+                                       </tr>
+                                   {% endfor %}
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+/* css */
+
+div{
+    
+    left: 300px;
+    width: 500px;
+    border: 1px solid black;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+.date,.destinataire{
+   text-align: right
+}
+
+.objet,.destinataire,.date{
+    font-weight: bold;
+}

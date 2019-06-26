@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="card">
+        <div class="card-body">
+            <h1 class="text-center">Nouveau dossier</h1><br/>
+
+            {# read and display just one flash message type #}
+            <div id="message">
+                {% for message in app.flashes('success') %}
+                    <div class="alert alert-success text-center">
+                        {{ message }}✅
+                    </div>
+                {% endfor %}
+                {% for message in app.flashes('warming') %}
+                    <div class="alert alert-warning text-center">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <fieldset>
+                <div class="row">
+                    <div class="col-md-6 offset-3">
+                        {{ form_start(form) }}
+                        <div class="form-group">
+                            {{ form_row(form.matricule, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_row(form.requerant, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-3">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </fieldset>
+            <br/>
+        </div>
+    </div>
+{% endblock %}

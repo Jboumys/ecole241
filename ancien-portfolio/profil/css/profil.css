@@ -1,0 +1,331 @@
+/***** style css ****/
+.container{
+ /* margin: 20px; */
+  width: 80%;
+  margin-left:auto; 
+  margin-right:auto;
+}
+body{
+ 
+/*background-image: linear-gradient(to right,  #320E15, #E70739); */
+  background-image: linear-gradient(to right, #B78178, #895959); 
+  font-size: 18px;
+  color: #fff;
+  font-family: "Nexa Light Regular";
+ 
+}
+.menu-h ul li, .menu-h ul{
+  display: inline;
+}
+.menu-h{
+  margin:20px;
+}
+nav > ul{
+  position: relative;
+  float: right;
+} 
+.rubrique li{
+  margin-left: 40px;
+}
+.menu-v{
+  position:fixed;
+  left:0;
+  z-index:1;
+}
+/*
+nav ul li:nth-child(4){
+  margin-right: 20px;
+}*/
+
+.div-icon ul li{
+  display: inline;
+  margin: 0;
+  border:1px solid #B78178;
+  border-radius:50%;
+  padding:5px 10px;
+  
+}
+.circle{
+  border: 1px solid #B78178;
+  background-color: #B78178;
+  padding: 10px;
+  border-radius: 20%;
+}
+nav ul li a,nav span a{
+  color: #fff;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none; 
+  color:#fff;
+}
+
+.img-profil{
+  /*position:relative;*/
+  float:left;
+  margin-top: 15px;
+  margin-right: 30px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+}
+.nom{
+  font-size:24px;
+  font-weight:bold;
+}
+.content{
+  width: 100%;
+  margin: 100px auto;
+}
+/********** div-bar, progress bar **************/
+.div-progress,.methode{
+  width:30%;
+  position:relative;
+  float:left;  
+}
+.methode{
+  width:30%;
+  position:relative;
+  float:left;
+  margin: 15px;
+  border: 1px solid #fff;
+}
+.contact{
+  width:50%;
+  position:relative;
+  float:left;
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.temoignage{
+  width:60%;
+  position:relative;
+  float:left;
+  margin: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.temoin{
+  padding:25px;
+}
+.outils{
+  width:30%;
+  position:relative;
+  float:left;
+  top: 5px;
+  margin: 15px;
+  border: 1px solid #fff;
+}
+h2{
+  text-align: center;
+}
+.progress{
+  border:1px solid #fff;
+}
+.progress-bar{
+  background-color:#fff;
+}
+/********** margin ******************/
+.margin-b-10{
+  margin-bottom:10px;
+}
+.margin-b-15{
+  margin-bottom:15px;
+}
+.margin-b-20{
+  margin-bottom:20px;
+}
+.margin-left-20{
+  margin-left:20px;
+}
+.margin-left-40{
+  margin-left:40px;
+}
+.margin-left-100{
+  margin-left:100px;
+}
+/********** active, disable ********/
+.active{
+  content:"";
+  display:block;
+  border:2px solid;
+  border-color: transparent transparent #fff;
+  
+}
+/************ div-img, img, text-img *****************/
+/*.div-img-1 > a img{
+  width:470px;
+  
+  border-radius:10px;
+  filter:drop-shadow(8px 8px 10px #B78178);
+  /*-webkit-transform: transform .2s;
+  -moz-transform: transform .2s;
+  -ms-transform: transform .2s;
+  transform: transform .2s; *
+  margin: 15px;
+}
+.div-img-2 > a img{
+  width:300px;
+  border-radius:10px;
+  filter:drop-shadow(8px 8px 10px #B78178);
+  /*-webkit-transform: transform .2s;
+  -moz-transform: transform .2s;
+  -ms-transform: transform .2s;
+  transform: transform .2s; *
+  margin: 15px;
+}
+.div-img-3 > a img{
+  width:225px;
+  border-radius:10px;
+  filter:drop-shadow(8px 8px 10px #B78178);
+  /*-webkit-transform: transform .2s;
+  -moz-transform: transform .2s;
+  -ms-transform: transform .2s;
+  transform: transform .2s; *
+  margin: 10px;
+}
+.div-img-1 > a img, .div-img-2 > a img, .div-img-3 > a img{
+  position:relative;
+  /*filter:drop-shadow(8px 8px 8px #52251C);*
+  box-shadow: 1px 8px 12px #52251C;
+} */
+
+img{
+  object-fit:cover;
+}
+/*********** height, width *********/
+.h-10{
+  height:10px;
+}
+.w-10{
+  width: 10px;
+}
+/********** color *********/
+.white{
+  color: #fff;
+}
+.red{
+  color: ##B1221C;
+}
+.blue{
+  color: #;
+}
+/********* float ********/
+.float-left{
+  position:relative;
+  float:left;
+}
+.float-right{
+  position:relative;
+  float:right;
+}
+.button{
+  border:1px solid;
+  padding:10px;
+}
+.home a{
+  font-family: 'Kaushan Script';
+  font-size:30px;
+
+}
+.form-group{
+  padding: 15px;
+  
+}
+.form-control{
+   border-radius: 5px;
+   padding: 10px;
+   
+}
+.citation{
+  width:35%;
+  border:1px solid #fff;
+  
+}
+/********** alignement ***********************/
+.text-center{
+  text-align:center;
+}
+.text-left{
+  text-align:left;
+}
+
+/*************** hover, link, visited ****************/
+/*a img:hover{
+  /*filter:drop-shadow(8px 8px 8px #fff);*
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 2;
+} */
+
+/********** transition + tranformation ***********/
+.div-img-1 > a img{
+    width:470px;
+    border-radius:10px;
+    filter:drop-shadow(8px 8px 10px #B78178);
+     margin: 15px;
+    transition: width 2s, height 2s, transform 2s;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    -moz-transition: width 2s, height 2s, -moz-transform 2s;
+    box-shadow: 1px 8px 12px #52251C;
+  }
+  .div-img-1 a img:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+  }
+  .div-img-2 > a img{
+    width:300px;
+    border-radius:10px;
+    filter:drop-shadow(8px 8px 10px #B78178);
+     margin: 15px;
+    transition: width 2s, height 2s, transform 2s;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    -moz-transition: width 2s, height 2s, -moz-transform 2s;
+    box-shadow: 1px 8px 12px #52251C;
+  }
+  .div-img-2 > a img:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+  }
+  .div-img-3 > a img{
+    width:225px;
+    border-radius:10px;
+    filter:drop-shadow(8px 8px 10px #B78178);
+    margin: 10px;
+    transition: width 2s, height 2s, transform 2s;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    -moz-transition: width 2s, height 2s, -moz-transform 2s;
+    box-shadow: 1px 8px 12px #52251C;
+  }
+  .div-img-3 > a img:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+  }
+
+/******* pagination *****************/
+.pagination a{
+  border: 1px solid #B78178;
+  background-color: #B78178;
+  color: #fff;
+  padding: 8px 16px
+}
+
+/********* positionnement ***********/
+
+
+
+/*@font-face {
+font-family: "Kaushan Script";
+src: url('KaushanScript-Regular.ttf');
+}
+*/

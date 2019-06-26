@@ -1,0 +1,136 @@
+/****** style css créé le 03/02/2019 par BOUMYS JEAN-WILSON 
+email: jboumys@gmail.com ********/
+
+/************ container *********************************/
+.container,footer{
+   width: 100%;    
+}
+.container-min{
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid;
+    
+}
+
+/******* alignement texte, composants, div, contenu ********/
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.img-center{
+    margin: 20px 30px;
+}
+.div-center{
+    margin: 0 auto;
+}
+
+
+
+
+/******* les couleurs de base(texte, font) *********/
+.bg-white{
+    background-color: #fff;
+}.bg-whitesmoke{
+    background-color: #F5F5F5;
+}
+.bg-snow{
+   background-color: #FFFAFA; 
+}
+.bg-red{
+    background-color: red;
+}
+.bg-redtomate{
+    background-color: #FF6347;
+}.bg-redsalmon{
+    background-color: #FA8072;
+}
+.bg-steelblue{
+    background-color: #4682B4;
+}
+.bg-lightgray{
+    background-color: #D3D3D3;
+}
+.bg-gray{
+    background-color: #808080
+}
+
+.text-white{
+    color: #fff;
+}
+
+/********** barres de navigation ***********/
+
+/*********** gras, normal, italic, **********/
+.bold{
+   font-weight: bold;
+}
+
+/********** barrre de progression ************/
+.progress-bar{
+    width: 200px;
+    height: 15px;
+    border: 1px solid; 
+}
+.progress-10{
+    width: 10%;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.progress-20{
+    width: 20%;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.progress-30{
+    width: 30%;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.progress-40{
+    width: 40%;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.progress-50{
+    width: 50%;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.progress-60{
+    width: 60%;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.progress-70{
+    width: 70%;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.progress-80{
+    width: 80%;
+    height: 15px;
+    text-align: center;
+}
+.progress-90{
+    width: 90%;
+    height: 15px;
+    text-align: center;
+}
+.progress-100{
+    width: 100%;
+    height: 15px;
+    text-align: center;
+}
+

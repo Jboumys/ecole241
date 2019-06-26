@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OverFlow</title>
+	<style type="text/css">
+	ul .myhidden{
+		list-style-type:none;/*J'enlève les styles des li*/
+		display: inline;/*Je dispose les li en ligne*/
+	}
+	.myhidden .hiddenUl .hiddenLi{
+		list-style: none;
+		display: none;/*Je cache la liste qui est contenu dans .myhidden*/
+	}
+	.myhidden:hover .hiddenUl .hiddenLi{/*Quand je passe la sourie sur .myhidden,affiche .hiddenUl qui contient .hiddenLi. Affiche cela en ligne.*/
+		display:inline;
+	}
+
+</style>
+</head>
+<body>
+	<ul>
+		<li class="myhidden">My Hidden
+			<ul class="hiddenUl">
+				<li class="hiddenLi">
+					Ce text s'affiche au passage de la sourie
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

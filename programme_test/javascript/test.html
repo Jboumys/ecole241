@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>testeur du javascript</title>
+</head>
+<body>
+    <!--script src="js/test.js"></script-->
+    <script type="text/javascript">
+       
+const nombre = Number(prompt("Entrez un nombre :"));
+if (nombre > 0) {
+  alert(nombre + " est positif");
+} else { // nombre <= 0
+  if (nombre < 0) {
+    alert(nombre + " est négatif");
+  } else { // nombre === 0
+    alert(nombre + " est nul");
+  }
+}
+
+
+
+
+const meteo = prompt("Quel temps fait-il dehors ?");
+switch (meteo) {
+  case "soleil":
+    console.log("Sortez en t-shirt.");
+    break;
+  case "vent":
+    console.log("Sortez en pull.");
+    break;
+  case "pluie":
+    console.log("Sortez en blouson.");
+    break;
+  case "neige":
+    console.log("Restez au chaud à la maison.");
+    break;
+  default:
+    console.log("Je n'ai pas compris !");
+}
+
+
+
+
+function direBonjour() {
+  console.log("Bonjour, comment tu vas?");
+}
+
+direBonjour(); //Bonjour, comment tu vas?
+
+
+
+function repondre() {
+  return "bien merci !";
+}
+
+const resultat = repondre();
+console.log(resultat); // "bien merci !"
+
+
+console.log("le minimum des nombres: "+Math.min(6.5, 5)); // 4.5
+
+console.log("Un nombre aléatoire entre 0 et 1: "+Math.random()); // Un nombre aléatoire entre 0 et 1
+
+        const stylo = {
+  type: "bille",
+  couleur: "bleu",
+  marque: "Bic"
+};
+
+// Modification de la propriété "couleur"
+stylo.couleur = "rouge";
+
+// "J'écris avec un stylo bille rouge de marque Bic"
+console.log(`J'écris avec un stylo ${stylo.type} ${stylo.couleur} de marque ${stylo.marque}`);
+
+
+/*
+
+const aurora = {
+  nom: "Aurora",
+  sante: 150,
+  force: 25
+};
+
+// Renvoie la description du personnage
+function decrire(personnage) {
+  return `${personnage.nom} a ${personnage.sante} points de vie et ${personnage.force} en force`;
+}
+
+// "Aurora a 150 points de vie et 25 en force"
+console.log(decrire(aurora));
+
+*/
+const aurora = {
+  nom: "Aurora",
+  sante: 150,
+  force: 25,
+
+  // Renvoie la description du personnage
+  decrire() {
+    return `${this.nom} a ${this.sante} points de vie et ${this.force} en force`;
+  }
+};
+
+// "Aurora a 150 points de vie et 25 en force"
+console.log(aurora.decrire());
+
+const tableau = ["Bonjour", 7, { message: "Coucou maman" }, true];
+console.log(tableau);
+
+const films = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+console.log(films.length); // 3
+
+
+const lesFilms = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+console.log(lesFilms[0]); // "Le loup de Wall Street"
+console.log(lesFilms[1]); // "Vice-Versa"
+console.log(lesFilms[2]); // "Babysitting"
+
+
+const tab = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+for (let i = 0; i < tab.length; i++) {
+  console.log(tab[i]);
+}
+
+
+const tab0 = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+for (const film of tab0) {
+  console.log(film);
+}
+
+
+
+const tab1 = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+tab1.forEach(film => {
+  console.log(tab1);
+});
+
+
+const tab2 = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+tab2.push("Les Bronzés"); // Ajoute le film à la fin du tableau
+console.log(tab2[3]); // "Les Bronzés"
+
+
+
+const tab3 = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+tab3.unshift("Les Bronzés"); // Ajoute le film au début du tableau
+console.log(tab3[0]); // "Les Bronzés"
+
+
+const tab4 = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+tab4.pop(); // Supprime le dernier élément
+console.log(tab4.length); // 2
+console.log(tab4[2]); // undefined
+
+
+const tab5 = ["Le loup de Wall Street", "Vice-Versa", "Babysitting"];
+
+tab5.splice(0, 1); // Supprime 1 element à partir de l'indice 0
+console.log(tab5.length); // 2
+console.log(tab5[0]); // "Vice-Versa"
+console.log(tab5[1]); // "Babysitting"
+
+
+/*************** chaines de caractères ************************/
+
+console.log("ABC".length); // 3
+console.log("Je suis une chaîne".length); // 18
+
+const motInitial = "Bora-Bora";
+console.log(motInitial.toLowerCase());  // "bora-bora"
+console.log(motInitial.toUpperCase());  // "BORA-BORA"
+console.log(motInitial);  // "Bora-Bora"
+
+//comparaison des chaines de caractères
+const chaine = "azerty";
+console.log(chaine === "azerty"); // true
+console.log(chaine === "qwerty"); // false
+
+console.log("Azerty" === "azerty"); // false (à cause du A majuscule)
+
+
+const valeurSaisie = "Quitter";
+console.log(valeurSaisie === "quitter");  // false (à cause du Q majuscule)
+console.log(valeurSaisie.toLowerCase() === "quitter");  // true
+
+
+const prenom = "Odile";
+for (const lettre of prenom) {
+  console.log(lettre);
+}
+
+    </script>
+</body> 
+</html> 

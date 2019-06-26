@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<title>testeur d'animations,sliders,transitions et autres</title>
+</head>
+<style>
+	.jean{
+		
+	}
+	.wilson{
+		
+	}
+	.tiret{
+		
+	}
+	div.myname{
+		width: 100px;
+		background-color: tomato;
+		height: 50px;
+		
+		text-align: center;
+		padding: 20px;
+		
+		transition: width 2s, height 2s, transform 2s;
+		-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+		-moz-transition: width 2s, height 2s, -moz-transform 2s;
+	}
+	div.myname:hover{
+		width: 200px;
+		height: 100px;
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	    -moz-transform: rotate(360deg);
+	}
+
+</style>
+<body>
+	<div class="myname">
+		<span class="jean">Jean</span><span class="tiret">-</span><span class="wilson">Wilson</span>
+	</div>
+	<div></div>
+</body>
+</html>

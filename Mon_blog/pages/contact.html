@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <div class="row"><!-- start row -->
         <div class="col-md-12">
             <!-- Start header -->
@@ -35,13 +35,13 @@
         </div>
     </div><!-- end row -->
 
-    <div style="margin: 0 15px; padding: 20px">
+    <div style="padding-right: 25px; margin-top: 10px ;">
         <!-- start row -->
         <div class="row">
             <div class="col-md-6 offset-1">
                 <!-- Start content -->
                 <div class="card">
-                    <div class="card-body">
+                    <address class="card-body">
                         <h2 class="card-title">Adresse</h2>
                         <div class="form-group">
                             <i class="fa fa-phone-square" aria-hidden="true"></i> +241 02125996
@@ -49,15 +49,17 @@
                         <div class="form-group">
                             <i class="fa fa-envelope" aria-hidden="true"></i> exemple@gmail.com
                         </div>
-                    </div>
-                </div><br/>
+                    </address>
+                </div>
+                <br/>
 
                 <div class="card padding-20">
-                    <form action="" method="post" class="card-body" style="margin-bottom: 40px">
+                    <form id="form_contact" action="" method="post" class="card-body" style="margin-bottom: 40px">
                         <h2 class="card-title">Formulaire de contact</h2>
+                        <div id="erreur_input" class="alert alert-danger"></div>
                         <div class="form-group">
                             <label for="email">Adresse e-mail</label>
-                            <input id="email" class="form-control" type="email" name="email" placeholder="votre e-mail">
+                            <input class="form-control" type="email" name="email" placeholder="votre e-mail">
                         </div>
                         <div class="form-group">
                             <label for="objet">Objet</label>
@@ -65,14 +67,15 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-control" type="text" name="objet" placeholder="écrire votre message ici"></textarea>
+                            <textarea id="message" class="form-control" type="text" name="message" placeholder="écrire votre message ici"></textarea>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary">Envoyer</button>
+                            <input type="submit" name="envoyer" value="Envoyer" class="btn btn-primary">
                         </div>
                     </form>
                 </div>
                 <!-- End content -->
+                <br/>
             </div>
 
             <div class="col-md-4">
@@ -84,9 +87,9 @@
                     <P class="">Je partage sur ce blog mes coups de coeur et découvertes mode, beauté, lifestyle ainsi que mes carnets de voyage</P>
                     <div class="text-center">
                         <p class="text-uppercase text-black"> Lien vers les réseaux sociaux</p>
-                        <span><img src="../assets/image/facebook-icon.jpg" alt="logo de hellocoton" width="30"></span>
-                        <span><img src="../assets/image/twitter-icon.jpg" alt="logo de hellocoton" width="30"></span>
-                        <span><img src="../assets/image/instagram-icon.jpg" alt="logo de hellocoton" width="30"></span>
+                        <span><img src="../assets/image/facebook-icon.jpg" alt="logo de facebook" width="30"></span>
+                        <span><img src="../assets/image/twitter-icon.jpg" alt="logo de twitter" width="30"></span>
+                        <span><img src="../assets/image/instagram-icon.jpg" alt="logo de instagram" width="30"></span>
                         <span><img src="../assets/image/helloCotton-logo.png" alt="logo de hellocoton" width="30"></span>
                     </div>
                     <br/>
@@ -95,14 +98,15 @@
 
                     <section class="newsletter">
                         <div>
-                            <h2 class="text-black">Newsletter</h2>
+                            <h1 class="text-black">Newsletter</h1>
                             <div>
-                                <form class="form-inline" action="" method="post">
+                                <form id="newsletter" class="form-inline" action="" method="post">
                                     <div class="form-group mb-2">
-                                        <input class="form-control" type="text" name="newsletter" id="newsletter" placeholder="e-mail">
+                                        <input class="form-control" type="text" id="email" name="email" placeholder="e-mail">
                                     </div>
                                     <button class="btn btn-primary mb-2" type="submit" name="newsletter">Envoyer</button>
                                 </form>
+                                <div id="erreur" class="text-red"></div>
                             </div>
                         </div>
                     </section>
@@ -119,7 +123,7 @@
             © 2017 MY <strong class="text-white"> BERMUDES</strong><br/>
             Proudly created with Wix.com
         </div>
-        <div class="image-center">
+        <div class="image image-center">
             <img class="img-fluid" src="../assets/image/image6.jpg">
             <img class="img-fluid" src="../assets/image/image7.jpg">
             <img class="img-fluid" src="../assets/image/image8.jpg">
@@ -133,6 +137,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/validation_contact.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,139 @@
+
+--------------------------------------------------------------------------------
+création de la bdd:
+--------------------------------------------------------------------------------
+
+CREATE DATABASE IF NOT EXISTS blog CHARACTER SET utf8 COLLATE utf8_general_ci ;
+
+--------------------------------------------------------------------------------
+création des tables:
+--------------------------------------------------------------------------------
+
+CREATE TABLE role
+(
+	id int PRIMARY KEY NOT null,
+    libele varchar(30)
+)
+ENGINE=INNODB ;
+
+CREATE TABLE utilisateur
+(
+	id int PRIMARY key NOT null,
+    username varchar(50),
+    pass varchar(255),
+    email varchar(255),
+    dateCreate date
+)
+ENGINE=INNODB ;
+
+CREATE TABLE article
+(
+	id int PRIMARY key NOT null,
+    titre varchar(100),
+    contenu text,
+    dateCreate date
+)
+ENGINE=INNODB ;
+
+CREATE TABLE commentaire
+(
+	id int PRIMARY key NOT null,
+    contenu text,
+    dateCreate date
+)
+ENGINE=INNODB ;
+
+CREATE TABLE IF NOT EXISTS proprietaire
+(
+	id int PRIMARY key NOT null,
+    nom varchar(100),
+    phone varchar(8),
+    adresse varchar(100),
+    photo varchar(255),
+    dateCreate date
+)
+ENGINE=INNODB ;
+
+CREATE TABLE IF NOT EXISTS abonne
+(
+	id int PRIMARY key NOT null,
+    eamil varchar(255),
+    dateCreate date
+)
+ENGINE=INNODB ;
+
+Visualiser le statut des tables:
+SHOW TABLE STATUS 
+
+
+--------------------------------------------------------------------------------       
+ajouter une champ(colonne) dans la table
+--------------------------------------------------------------------------------
+
+ALTER TABLE article 
+ADD utilisateur_id int not null
+
+ALTER TABLE commentaire 
+ADD utilisateur_id int not null,
+ADD article_id int NOT null
+
+ALTER TABLE utilisateur 
+ADD role_id int not null
+
+
+
+
+--------------------------------------------------------------------------------
+ajouter une clé étrangère dans une table
+--------------------------------------------------------------------------------
+
+ALTER TABLE article 
+ADD FOREIGN key (utilisateur_id) REFERENCES utilisateur(id)
+
+ALTER TABLE commentaire 
+ADD FOREIGN KEY (utilisateur_id) REFERENCES utilisateur(id),
+ADD FOREIGN KEY (article_id) REFERENCES article(id)
+
+
+
+--------------------------------------------------------------------------------
+créer un utilisateur sans définir un mot de passe
+--------------------------------------------------------------------------------
+
+CREATE USER 'wilson'@'localhost' ;
+
+
+--------------------------------------------------------------------------------
+créer un utilisateur en définissant son mot de passe
+--------------------------------------------------------------------------------
+
+CREATE USER 'wilson'@'localhost' IDENTIFIED BY '1234' ;
+
+
+--------------------------------------------------------------------------------
+définir ou modifier un mot de passe à l'utilisateur
+--------------------------------------------------------------------------------
+
+SET PASSWORD FOR 'wilson'@'localhost' = PASSWORD('1234') ;
+
+
+
+--------------------------------------------------------------------------------
+octroyer tous les droits à un utilisateur sur toute la bdd
+--------------------------------------------------------------------------------
+
+GRANT ALL PRIVILEGES ON blog.* TO 'wilson'@'localhost' WITH GRANT OPTION;
+
+                               ou
+ 
+GRANT ALL PRIVILEGES ON blog.* TO 'wilson'@'localhost' ;
+
+
+
+
+--------------------------------------------------------------------------------
+octroyer tous les droits d'accès à un utilisateur sur une table de la bdd
+--------------------------------------------------------------------------------
+
+GRANT ALL PRIVILEGES ON blog.article TO 'wilson'@'localhost' ;
+

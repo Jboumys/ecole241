@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 03 juil. 2019 à 12:45
+-- Généré le :  mer. 03 juil. 2019 à 13:15
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -32,23 +32,6 @@ DROP TABLE IF EXISTS `abonne`;
 CREATE TABLE IF NOT EXISTS `abonne` (
   `id` int(11) NOT NULL,
   `eamil` varchar(255) DEFAULT NULL,
-  `dateCreate` date DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `admin`
---
-
-DROP TABLE IF EXISTS `admin`;
-CREATE TABLE IF NOT EXISTS `admin` (
-  `id` int(11) NOT NULL,
-  `nom` varchar(100) DEFAULT NULL,
-  `phone` varchar(8) DEFAULT NULL,
-  `adresse` varchar(100) DEFAULT NULL,
-  `photo` varchar(255) DEFAULT NULL,
   `dateCreate` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -86,6 +69,23 @@ CREATE TABLE IF NOT EXISTS `commentaire` (
   PRIMARY KEY (`id`),
   KEY `utilisateur_id` (`utilisateur_id`),
   KEY `article_id` (`article_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `proprietaire`
+--
+
+DROP TABLE IF EXISTS `proprietaire`;
+CREATE TABLE IF NOT EXISTS `proprietaire` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(100) DEFAULT NULL,
+  `phone` varchar(8) DEFAULT NULL,
+  `adresse` varchar(100) DEFAULT NULL,
+  `photo` varchar(255) DEFAULT NULL,
+  `dateCreate` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
